@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS AND INPUT TAGS</title>
+</head>
+<body>
+    <h1>FORM</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+            <label for="subscribe">Subscribe to my youtube channel</label>
+        </div>
+        <div>
+            <textarea name="comment" id="comment" rows="8" cols="50">Enter your comment</textarea>
+        </div>
+        <div>
+            <select name="city" id="city" >city
+                <option value="Meerut">Meerut</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
