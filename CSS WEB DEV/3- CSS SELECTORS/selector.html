@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* Element Selector */
+        div {
+            color: red;
+            background-color: yellow;
+        }
+
+        /* Class Selector */
+        .second {
+            color: red;
+            background-color: bisque;
+        }
+
+        /* ID Selector */
+        #hashtag {
+            color: rgb(32, 3, 78);
+            background-color: rgb(184, 133, 66);
+        }
+
+        /* Child Selector */
+        div>p {
+            color: rgb(2, 59, 2);
+            background-color: lightgreen;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: rgb(4, 4, 82);
+            background-color: rgb(223, 223, 114);
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: red;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: blue;
+        }
+
+        a:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        hey everyone i am first div.
+    </div>
+    <div class="second">
+        hey i am second div.
+    </div>
+    <div id="hashtag">
+        i am another id div.
+        <span>
+            <p>
+                i am paragraph inside the id div.
+        </span>
+        </p>
+    </div>
+    <a href="https://google.com">Open Google</a>
+    <a href="https://instagram.com">Open Instagram</a>
+</body>
+
+</html>
