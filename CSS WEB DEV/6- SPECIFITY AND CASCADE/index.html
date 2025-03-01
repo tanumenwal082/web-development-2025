@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SPECIFITY AND CASCADE</title>
+    <style>
+        .yellow {
+            color: yellow;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        p {
+            background-color: rgb(143, 190, 188);
+        }
+
+        .order {
+            background-color: rosybrown;
+        }
+
+        .specifity {
+            background-color: bisque;
+        }
+
+        .cascade {
+            background-color: burlywood;
+        }
+
+        #unique {
+            background-color: bisque;
+            color: blue;
+        }
+
+        .important {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="specifity">
+        SPECIFITY:- CSS specifity determines which style rule applied to an element when there are coflicts. Higher
+        specifity means the style will be used. It is calculated based on a point system involving inline styles.
+    </div>
+    <br>
+    <div class="cascade">
+        CASCADE:- The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element.
+    </div>
+    <div>
+        <h1 class="yellow, red , green">CSS Specifity and Cascade</h1>
+    </div>
+    <p>
+        In the above heading a single element has given three classes and all three classes have assigned different
+        properties. According to the specifity and cascade rules, the last class will be applied to the element. point
+        to remember is that three selectors are same so last one is applied.
+        If the selectors are same then cascading is calculated. And when the selectors are different then specifity is
+        calculated.
+    </p>
+    <div id="unique">The order of specifity is given as follows:-</div>
+    <div class="order">
+        Inline Style &gt; ID Selector &gt; Class or Attribute Selector &gt; Element Selector &gt; universal Selector
+        &gt;
+    </div>
+    <div class="important"> important keyword will override all of above selectors </div>
+</body>
+
+</html>
