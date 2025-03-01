@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY PROPERTY</title>
+    <style>
+        .box {
+            border: 4px solid red;
+            margin: 20px 10px 20px 10px;
+            padding: 10px;
+            display: inline;
+            background-color: yellow;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .container {
+            display: block;
+            background-color: red;
+            border: 4px solid yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Display property specifies or determine how an element would be displayed on the website.</p>
+    <div>we can apply following display property:-</div>
+    <ol>
+        <li>Display Inline</li>
+        <li>Display Block</li>
+        <li>Display Inline-Block</li>
+        <li>Display None</li>
+        <li>Display Hidden</li>
+    </ol>
+    <br>
+    <div class="box">i am block box but can be displayed as inline using display property</div>
+
+    <div>
+        <p style="background-color: rgb(26, 182, 130); border: 2px solid green;">
+            here div box is block which takes entire width but we have apply inline display property thats why it is
+            looking so.
+        </p>
+    </div>
+    <span class="container">hey i am inline span but can be displayed as block using display property</span>
+</body>
+
+</html>
