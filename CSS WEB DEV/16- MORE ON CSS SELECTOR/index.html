@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE ON CSS SELECTOR</title>
+    <style>
+        /* only first div will be styled */
+        .box:first-child {
+            background-color: rgb(211, 191, 174);
+        }
+
+        /* only first line of first div will be styled */
+        .box::first-line {
+            color: red;
+        }
+
+        /* to select whole content from the class */
+        .boxes * {
+            color: rgb(11, 77, 128);
+            border: 2px solid black;
+        }
+
+        .box2 {
+            background-color: royalblue;
+        }
+
+        .box3 {
+            background-color: silver;
+        }
+
+        /* Attribute Selector */
+        [data-color="primary"] {
+            background-color: chartreuse;
+
+        }
+
+        /* nth child pseudo selector */
+        .boxes:nth-child(even) {
+            border: 4px solid red;
+            background-color: goldenrod
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color: skyblue; text-align: center;">MORE ON CSS SELECTOR</h1>
+    <div class="boxes">
+        <div class="box">hey i am box Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, quidem delectus
+            hic in, aperiam dolor soluta recusandae est adipisci eveniet modi! Dicta quisquam, fugit doloremque ut,
+            dignissimos praesentium saepe delectus, dolore incidunt odit debitis quas expedita non quae repellendus
+            animi officia consectetur earum sit autem illo. Enim obcaecati laborum corrupti exercitationem totam ullam
+            adipisci possimus, dolorem aut quas quos blanditiis eligendi inventore, cum reiciendis consectetur porro
+            neque numquam incidunt, ipsa molestiae? Corporis doloremque, provident eaque ut nihil repellendus. Qui
+            voluptas esse, quos officia omnis quo, cumque possimus cum repellendus amet corrupti molestias quae
+            consectetur vero minus molestiae, non dicta eveniet ut ad eum. Laboriosam, sunt aliquid. Reprehenderit animi
+            consectetur beatae autem veniam enim ullam illo, quaerat velit error deserunt repellendus, adipisci tenetur
+            odio nihil. Libero recusandae tempore, quibusdam veritatis illo consequuntur, voluptatem dolores odio iste
+            sit ipsam. Laboriosam adipisci ad eum sequi doloremque, quibusdam culpa cupiditate, earum soluta dignissimos
+            error sapiente id esse aperiam maxime mollitia molestiae consectetur eius quaerat harum porro, natus placeat
+            explicabo. Eius harum temporibus inventore labore iusto itaque quos. Nam neque laboriosam ex quasi provident
+            impedit vel quos omnis cum reprehenderit tempora iusto deserunt inventore sequi sit, id ipsa quia dolorum
+            ducimus et eligendi vero saepe alias ad? Nemo, odio reiciendis placeat cumque ex repellendus quae veniam
+            corporis asperiores expedita nesciunt, ad, tenetur nobis? Maiores alias molestiae unde. Neque maiores quod
+            reiciendis veniam! Voluptas alias eum, temporibus aliquid ipsa dolores molestias ipsam quasi quo aspernatur
+            veritatis cupiditate dolorum! Sequi perferendis minima sit, aut asperiores maiores aperiam quo facere
+            numquam ipsum vero! Dicta modi cumque quas laboriosam enim voluptatum deleniti ipsum voluptatibus ut
+            tempora? Vel, recusandae ullam aspernatur repellendus quia doloribus alias voluptatum nobis consequatur
+            perferendis eveniet. Dolore provident doloremque placeat excepturi ut eos, saepe voluptatum? Cum, dolorem?
+            Laboriosam error velit unde tempore iure. Eius totam animi dolorem nemo saepe, reiciendis velit dolorum
+            voluptates unde, enim sed minus, fugiat dolores iusto tempore magnam necessitatibus non molestias. Dolorum,
+            harum magni? Distinctio recusandae quidem id illo omnis! Optio, laborum! Minus ex laboriosam at, numquam
+            quaerat quidem ducimus esse repellat dolorum iste accusantium totam saepe dicta facere ullam vitae, sequi
+            exercitationem! Veritatis architecto quia nostrum vitae dolor necessitatibus, consequuntur eum, repellat
+            libero molestias aspernatur atque impedit aut est ea perferendis assumenda! Optio distinctio voluptatum
+            autem labore atque ab id beatae quis, consectetur amet! Quidem dolore aliquid consectetur, velit alias,
+            voluptates iusto minus veniam esse est, praesentium numquam repellendus autem commodi dolorum magnam rerum.
+            At reiciendis nesciunt sunt repellendus. Nesciunt, iusto voluptate. Velit, praesentium ullam adipisci
+            voluptas, officiis iusto inventore temporibus quisquam nemo similique laudantium, dicta distinctio dolores
+            ipsa provident omnis iste voluptatibus qui doloribus odio hic in labore. Animi, magnam saepe aspernatur
+            dolores, ea porro blanditiis corporis minima adipisci non, possimus sequi provident laudantium.</div>
+        <div data-color="primary" class="box2">hey i am box 2 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Ut fugit consequatur error tempora voluptas nam! Doloremque sint aliquam et exercitationem velit, aspernatur
+            saepe.</div>
+        <div class="box3">hey i am box 3</div>
+
+    </div>
+</body>
+
+</html>
