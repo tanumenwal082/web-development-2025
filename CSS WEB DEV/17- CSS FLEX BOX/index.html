@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX</title>
+    <style>
+        .container {
+            border: 5px solid red;
+            display: flex;
+            justify-content: center;
+            /* like there is align content and items but there is not justify item only justify content */
+            align-items: flex-start;
+            height: 80vh;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            /* gap will cause the space between items */
+            /* gap: 20px; */
+            /* row gap will cause the space between rows */
+            row-gap: 20px;
+            /* column gap will cause the space between coloumn */
+            column-gap: 20px;
+
+        }
+
+        .item {
+
+            height: 50px;
+            width: 50px;
+            background-color: chartreuse;
+            border: 2px solid black;
+            margin: 0px;
+            padding: 5px;
+        }
+
+        /* this property will be applied on the items */
+        .order1 {
+            order: 1;
+        }
+
+        .order20 {
+            order: 20;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color: chocolate; text-align: center;">CSS FLEXBOX</h1>
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item order1">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item order20">15</div>
+            <div class="item">16</div>
+            <div class="item">17</div>
+            <div class="item">18</div>
+            <div class="item">19</div>
+            <div class="item">20</div>
+            <div class="item">21</div>
+            <div class="item">22</div>
+            <div class="item">23</div>
+            <div class="item">24</div>
+            <div class="item">25</div>
+            <div class="item">26</div>
+            <div class="item">27</div>
+            <div class="item">28</div>
+            <div class="item">29</div>
+            <div class="item">30</div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
