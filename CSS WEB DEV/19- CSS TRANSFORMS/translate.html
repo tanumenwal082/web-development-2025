@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSFORM</title>
+    <style>
+        .container {
+            background-color: rgb(198, 87, 206);
+            border: 3px solid black;
+            height: 80vh;
+            width: 60vw;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .box {
+            background-color: blueviolet;
+            border: 2px solid black;
+            height: 20vh;
+            width: 25vw;
+            text-align: center;
+            margin: 5px;
+
+        }
+
+        .box1 {
+            background-color: sandybrown;
+            border: 1.5px solid black;
+            height: 20px;
+            width: 20px;
+            /* translate transform about X-axis*/
+            transform: translateX(50%);
+        }
+
+        .bank {
+            background-color: rgb(86, 199, 139);
+            border: 2px solid black;
+            height: 20vh;
+            width: 25vw;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .bank1 {
+            background-color: sandybrown;
+            border: 1.5px solid black;
+            height: 20px;
+            width: 20px;
+            /* translate transform about Y-axis*/
+            transform: translateY(50%);
+        }
+
+        /* same for Z-axis */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="background-color: rgb(85, 135, 205); text-align: center;">TRANSFORM PROPERTY</h1>
+        <h2 style="background-color: rgb(115, 151, 224); text-align: center;">TRANSLATE TRANSFORM</h2>
+        <div class="box">Translate about X-axis
+            <div class="box1"></div>
+        </div>
+        <div class="bank">Translate about Y-axis
+            <div class="bank1"></div>
+        </div>
+    </div>
+</body>
+
+</html>
