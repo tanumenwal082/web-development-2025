@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS TRANSFORM</title>
+  <style>
+    .bigbox {
+      border: 4px solid black;
+      height: 120vh;
+      width: 80vw;
+      background-color: aquamarine;
+      margin: 5px;
+      padding: 10px;
+    }
+
+    .container1 {
+      background-color: silver;
+      border: 2px solid black;
+      height: 30vh;
+      width: 20vw;
+      margin: 20px;
+      text-align: center;
+
+    }
+
+    .box1 {
+      background-color: red;
+      border: 2px solid black;
+      /* scale about X-axis */
+      /* this property increase the size of element according the number we give */
+      transform: scaleX(2.5);
+      height: 20px;
+      width: 20px;
+    }
+
+    .container2 {
+      background-color: rgb(233, 110, 110);
+      border: 2px solid black;
+      height: 30vh;
+      width: 20vw;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .box2 {
+      background-color: red;
+      border: 2px solid black;
+      /* scale about Y-axis */
+      /* this property increase the size of element according the number we give */
+      transform: scaleY(2.5);
+      height: 20px;
+      width: 20px;
+    }
+
+    .container3 {
+      background-color: rgb(135, 210, 61);
+      border: 2px solid black;
+      height: 30vh;
+      width: 20vw;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .box3 {
+      background-color: red;
+      border: 2px solid black;
+      /* scale about Z-axis */
+      /* this property increase the size of element according the number we give */
+      transform: scaleZ(2.5);
+      height: 20px;
+      width: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bigbox">
+    <h1 style="background-color: rgb(179, 211, 50); text-align: center;">TRANSFORM PROPERTY</h1>
+
+    <h2 style="background-color: rgb(108, 161, 217); text-align: center;">SCALE PROPERTY</h2>
+
+    <div class="container1">Scale property about X-axis
+      <div class="box1"></div>
+    </div>
+
+    <div class="container2">Scale property about Y-axis
+      <div class="box2"></div>
+    </div>
+
+    <div class="container3">Scale property about Z-axis
+      <div class="box3"></div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>
