@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSITION</title>
+    <style>
+        .container {
+            background-color: rgb(29, 198, 44);
+            border: 2px solid black;
+            height: 50vh;
+            width: 40vw;
+        }
+
+        .box {
+            background-color: rgb(234, 56, 171);
+            border: 1.5px solid black;
+            height: 5vh;
+            width: 4vw;
+            transition-property: transform, background-color;
+            /* we can also apply transition property to multiple element by using the keyword 'all' */
+            transition-timing-function: ease-in-out;
+            transition-duration: 2s;
+            transition-delay: 1s;
+        }
+
+        .trans {
+            transform: translateX(10vw) translateY(10vh);
+            background-color: rgb(19, 112, 192);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box trans"></div>
+    </div>
+</body>
+
+</html>
