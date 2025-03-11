@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS OBJECT-FIT AND OBECT-COVER</title>
+    <style>
+        .container {
+            background-color: rgb(143, 213, 96);
+            border: 2px solid black;
+            height: 300px;
+            width: 550px;
+
+        }
+
+        img {
+            width: 500px;
+            height: 250px;
+            object-position: bottom right;
+            /* object-fit: cover; */
+            object-fit: fill;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color:rgb(143, 213, 96); text-align: center;">OBJECT-FIT AND OBJECT-COVER</h1>
+    <div class="container">
+        <img src="images.jpeg" alt="nature">
+    </div>
+</body>
+
+</html>
